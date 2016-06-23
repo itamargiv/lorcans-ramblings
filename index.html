@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Lorcan's Ramblings</title>
+  <style>
+
+    @import 'https://fonts.googleapis.com/css?family=Montserrat:700';
+
+    h1, h1:before, h1:after {
+      position: absolute;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 5VW;
+      text-transform: uppercase;
+      top: 10vh;
+      left: 18vw;
+      mix-blend-mode: multiply;
+      color: red;
+    }
+
+    h1:before, h1:after {
+      display: block;
+      width: 100%;
+      content: attr(data-duplicate);
+      color: chartreuse;
+      top: -5%;
+      left: -1%;
+    }
+
+    h1:after {
+      color: aquamarine;
+      top: 5%;
+      left: 1%;
+    }
+  </style>
+</head>
+<body>
+ <h1 data-duplicate="Lorcan's Ramblings">Lorcan's Ramblings</h1>
+</body>
+</html>
